@@ -1,6 +1,6 @@
-<div appLogger [message]="'some text'" ]>
+<div appLogger [message]="'some text'">
   <div [ngClass]="{javascript: isJavaScript(item)}" *ngFor="let item of languages">
-    <h4>{{item}}</h4>
+    <app-language [item]="item"></app-language>
   </div>
     Please, enter your option:
     <input type="text">

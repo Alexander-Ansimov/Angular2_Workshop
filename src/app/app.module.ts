@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import {LanguageService} from './language.service';
 import { QuotePipe } from './quote.pipe';
 import { LoggerDirective } from './logger.directive';
+import { LanguageComponent } from './language/language.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuotePipe,
-    LoggerDirective
+    LoggerDirective,
+    LanguageComponent
   ],
   imports: [
     BrowserModule,
