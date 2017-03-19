@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {LanguageService} from './language.service';
 import { QuotePipe } from './quote.pipe';
+import { LoggerDirective } from './logger.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    QuotePipe
+    QuotePipe,
+    LoggerDirective
   ],
   imports: [
     BrowserModule,
