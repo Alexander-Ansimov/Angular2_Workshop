@@ -9,3 +9,9 @@
   <div>You chosen ...</div>
 </div>
 <div>{{title | quote : "param1" : "param2"}}</div>
+
+<form (ngSubmit) = "save()" [formGroup]="userForm">
+  <input type="text" formControlName="userName">
+  <div *ngIf="!userForm.get('userName').valid && userForm.get('userName').touched">Please, enter valid user name</div>
+  <input type="submit" value="Save">
+</form>
